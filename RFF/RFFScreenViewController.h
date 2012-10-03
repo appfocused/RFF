@@ -1,5 +1,5 @@
 //
-//  RFFViewController.h
+//  RFFScreenViewController.h
 //  RFF
 //
 //  Created by Vitaly Kondratiev on 02/10/2012.
@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RFFScreenViewController.h"
 
-@interface RFFViewController : RFFScreenViewController
+@interface RFFScreenViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UINavigationBar *topBar;
+
+- (void) switchLanguage;
 
 - (void) setLocalizationValues:(id)sender;
 

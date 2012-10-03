@@ -18,6 +18,10 @@
 		14BB0D01161B5D9B0010944C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BB0D00161B5D9B0010944C /* Default-568h@2x.png */; };
 		14BB0D04161B5D9B0010944C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BB0D02161B5D9B0010944C /* MainStoryboard.storyboard */; };
 		14BB0D07161B5D9B0010944C /* RFFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB0D06161B5D9B0010944C /* RFFViewController.m */; };
+		14BB0D10161B5EFD0010944C /* TSLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB0D0F161B5EFD0010944C /* TSLanguageManager.m */; };
+		14BB0D13161B60830010944C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14BB0D15161B60830010944C /* Localizable.strings */; };
+		14BB0D21161B65870010944C /* RFFScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB0D20161B65870010944C /* RFFScreenViewController.m */; };
+		14BB0D24161B66D80010944C /* RFFFilms.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB0D23161B66D70010944C /* RFFFilms.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,14 @@
 		14BB0D03161B5D9B0010944C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		14BB0D05161B5D9B0010944C /* RFFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFFViewController.h; sourceTree = "<group>"; };
 		14BB0D06161B5D9B0010944C /* RFFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFFViewController.m; sourceTree = "<group>"; };
+		14BB0D0E161B5EF30010944C /* TSLanguageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLanguageManager.h; sourceTree = "<group>"; };
+		14BB0D0F161B5EFD0010944C /* TSLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLanguageManager.m; sourceTree = "<group>"; };
+		14BB0D14161B60830010944C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14BB0D16161B609A0010944C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14BB0D1F161B65870010944C /* RFFScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFFScreenViewController.h; sourceTree = "<group>"; };
+		14BB0D20161B65870010944C /* RFFScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFFScreenViewController.m; sourceTree = "<group>"; };
+		14BB0D22161B66D70010944C /* RFFFilms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFFFilms.h; sourceTree = "<group>"; };
+		14BB0D23161B66D70010944C /* RFFFilms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFFFilms.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +95,16 @@
 		14BB0CF0161B5D9B0010944C /* RFF */ = {
 			isa = PBXGroup;
 			children = (
+				14BB0D02161B5D9B0010944C /* MainStoryboard.storyboard */,
+				14BB0D0D161B5DC50010944C /* Localization */,
 				14BB0CF9161B5D9B0010944C /* RFFAppDelegate.h */,
 				14BB0CFA161B5D9B0010944C /* RFFAppDelegate.m */,
-				14BB0D02161B5D9B0010944C /* MainStoryboard.storyboard */,
 				14BB0D05161B5D9B0010944C /* RFFViewController.h */,
 				14BB0D06161B5D9B0010944C /* RFFViewController.m */,
+				14BB0D22161B66D70010944C /* RFFFilms.h */,
+				14BB0D23161B66D70010944C /* RFFFilms.m */,
+				14BB0D1F161B65870010944C /* RFFScreenViewController.h */,
+				14BB0D20161B65870010944C /* RFFScreenViewController.m */,
 				14BB0CF1161B5D9B0010944C /* Supporting Files */,
 			);
 			path = RFF;
@@ -105,6 +122,16 @@
 				14BB0D00161B5D9B0010944C /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14BB0D0D161B5DC50010944C /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				14BB0D0E161B5EF30010944C /* TSLanguageManager.h */,
+				14BB0D0F161B5EFD0010944C /* TSLanguageManager.m */,
+				14BB0D15161B60830010944C /* Localizable.strings */,
+			);
+			name = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +170,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
 			);
 			mainGroup = 14BB0CDB161B5D9B0010944C;
 			productRefGroup = 14BB0CE7161B5D9B0010944C /* Products */;
@@ -164,6 +192,7 @@
 				14BB0CFF161B5D9B0010944C /* Default@2x.png in Resources */,
 				14BB0D01161B5D9B0010944C /* Default-568h@2x.png in Resources */,
 				14BB0D04161B5D9B0010944C /* MainStoryboard.storyboard in Resources */,
+				14BB0D13161B60830010944C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +206,9 @@
 				14BB0CF7161B5D9B0010944C /* main.m in Sources */,
 				14BB0CFB161B5D9B0010944C /* RFFAppDelegate.m in Sources */,
 				14BB0D07161B5D9B0010944C /* RFFViewController.m in Sources */,
+				14BB0D10161B5EFD0010944C /* TSLanguageManager.m in Sources */,
+				14BB0D21161B65870010944C /* RFFScreenViewController.m in Sources */,
+				14BB0D24161B66D80010944C /* RFFFilms.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +229,16 @@
 				14BB0D03161B5D9B0010944C /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		14BB0D15161B60830010944C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14BB0D14161B60830010944C /* en */,
+				14BB0D16161B609A0010944C /* ru */,
+			);
+			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

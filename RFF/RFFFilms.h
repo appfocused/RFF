@@ -1,5 +1,5 @@
 //
-//  RFFViewController.h
+//  RFFFilms.h
 //  RFF
 //
 //  Created by Vitaly Kondratiev on 02/10/2012.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RFFScreenViewController.h"
 
-@interface RFFViewController : RFFScreenViewController
+@interface RFFFilms : RFFScreenViewController
 
 - (void) setLocalizationValues:(id)sender;
 

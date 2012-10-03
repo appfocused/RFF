@@ -7,17 +7,34 @@
 //
 
 #import "RFFAppDelegate.h"
+#import "TSLanguageManager.h"
+
 
 @implementation RFFAppDelegate
 
+@synthesize window = _window;
+
+- (void)translateTabBar {
+    
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    UIViewController *c = [navigationController.viewControllers objectAtIndex:0];
+    
+    //set item names
+    [[c.tabBarController.tabBar.items objectAtIndex:0] setTitle:[TSLanguageManager localizedString:@"HOME"]];
+    [[c.tabBarController.tabBar.items objectAtIndex:1] setTitle:[TSLanguageManager localizedString:@"FILMS"]];
+
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self translateTabBar];
     // Override point for customization after application launch.
     return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
+    
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }

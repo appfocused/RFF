@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  RFF
+
+  Created by Vitaly Kondratiev on 02/10/2012.
+  Copyright (c) 2012 AppFocused. All rights reserved.
+*/
+
+
+"Hello" = "Hello";
+"Bye" = "Goodbye";
+
+"MAIN_PAGE_TITLE" = "RFF London 2012";
+
+"HOME" = "Home";
+"FILMS" = "Films";
+"VENUES" = "Venues";
