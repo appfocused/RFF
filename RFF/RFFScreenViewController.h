@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UINavigationBar *topBar;
 
 - (void) switchLanguage;
+- (void) addBackButton;
 
 - (void) setLocalizationValues:(id)sender;
 
